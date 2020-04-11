@@ -82,10 +82,10 @@ endef
 
 PKG_BUILD_DEPENDS:=boost/host PACKAGE_python:python PACKAGE_python3:python3
 
-include ../../lang/python/python-version.mk
+include ../../lang/python3/files/python3-version.mk
 BOOST_PYTHON_VER=$(PYTHON_VERSION)
 
-include ../../lang/python/python3-version.mk
+include ../../lang/python3/files/python3-version.mk
 BOOST_PYTHON3_VER=$(PYTHON3_VERSION)
 
 BOOST_LIBS =
