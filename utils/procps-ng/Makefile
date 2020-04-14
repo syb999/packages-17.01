@@ -29,8 +29,8 @@ include $(INCLUDE_DIR)/package.mk
 CONFIGURE_ARGS += --enable-skill
 
 PROCPS_APPLETS := \
-    free kill pgrep pkill pmap ps pwdx skill slabtop \
-    snice tload top uptime vmstat w watch
+    kill pkill pmap ps pwdx skill slabtop \
+    snice tload vmstat w watch
 
 define Package/procps-ng/Default
   SECTION:=utils
