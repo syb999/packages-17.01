@@ -22,7 +22,7 @@ GO_PKG_LDFLAGS+= \
 	-X '$(GO_PKG)/version.Version=$(PKG_VERSION)' \
 	-X '$(GO_PKG)/version.BuildTime=$(COMPILE_TIME)' 
 include $(INCLUDE_DIR)/package.mk
-include $(TOPDIR)/package/golang/golang-package.mk
+include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 
 define Package/$(PKG_NAME)
 	SECTION:=net
